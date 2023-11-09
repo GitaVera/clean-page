@@ -25,7 +25,7 @@ a {
     box-sizing: border-box;
     margin: 0 auto;
 }
-.first-block-black {
+.first-block-second {
     background-color: #131313;
     color: #F5F5F5;
 }
@@ -33,10 +33,16 @@ a {
     background-color: #FEE42A;
     color: #131313;
 }
+header {
+    padding: 10px 0;
+    display: flex;
+    gap: 168px;
+  }
 .header_navigation {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 24px;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
 }
 .head-logo {
     width: 78.45px;
@@ -45,22 +51,26 @@ a {
 }
 .header_menu {
     list-style: none;
-    padding: 24px 20px 0 0;
+    padding: 24px 0;
     font-size: 16px;
 }
 .head-menu-links:not(:last-child) {
     padding-bottom: 12px;
 }
+.cover {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAzNDAgMTk4Ij4KICA8Y2lyY2xlIGN4PSI2MCIgY3k9IjEzOCIgcj0iNTkuNSIgc3Ryb2tlPSIjRkVFNDJBIi8+CiAgPHBhdGggc3Ryb2tlPSIjRjgzQzMzIiBkPSJNMjQ1LjYxIDEyNy4yMDkgMjYyLjUyNC45MjE1OCAzNjQuMDA1IDc4LjYzNzEgMjQ1LjYxIDEyNy4yMDlaIi8+Cjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position-y: bottom;
+    background-position-x: right;
+  }
 .main-title {
     padding: 0 20px 0 20px;
     font-family: 'EB Garamond', serif;
     font-size: 72px;
+    line-height: 72px;
     color: #fff;
     font-weight: 400;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAzNDAgMTk4Ij4KICA8Y2lyY2xlIGN4PSI2MCIgY3k9IjEzOCIgcj0iNTkuNSIgc3Ryb2tlPSIjRkVFNDJBIi8+CiAgPHBhdGggc3Ryb2tlPSIjRjgzQzMzIiBkPSJNMjQ1LjYxIDEyNy4yMDkgMjYyLjUyNC45MjE1OCAzNjQuMDA1IDc4LjYzNzEgMjQ1LjYxIDEyNy4yMDlaIi8+Cjwvc3ZnPg==');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
     min-height: 221px;
 }
 .main-span {
@@ -73,17 +83,16 @@ a {
     text-align: right;
 }
 .main-head {
-    padding-top: 30px;
     padding: 30px 20px 24px 20px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-}
+    line-height: 120%;
+  }
 .begin-title {
     color: #CCCCCC;
     font-weight: 400;
     font-size: 16px;
-
 }
 .begin-date {
     white-space: nowrap;
@@ -91,48 +100,64 @@ a {
 }
 .begin-main-text {
     padding: 0 20px 37px 20px;
+    line-height: 135%;
 }
 .begin-main-text-type:{
     padding-bottom: 24px;
+    }
+.second
+{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    line-height: 135%;
+    margin-top: 23px;
 }
-
 .content-section-inter {
     padding: 0 20px 32px 20px;
     line-height: 27px;
     font-size: 20px;
 }
-.content-section-spisok {
-    padding: 0 20px 39px 35px;
+.content-section-list {
+    padding: 0 20px 39px 36px;
 }
 .content-section-title{
     font-family: 'EB Garamond', 'serif';
     font-size: 28px;
+    line-height: 32.2px;
     font-weight: 500;
     padding: 40px 20px 32px 20px;
 }
-.content-section-spisok-item {
+.content-section-list-item {
     font-size: 16px;
     line-height: 21.6px;
+    padding-bottom: 15px;
 }
-.content-section-spisok-item:{
+.content-section-list-item:{
     padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 17px;
 }
-.content-section-spisok-accent {
+.content-section-list-accent {
     font-weight: 700;
     display: inline;
 }
-
-
-
 .card-list {
-    list-style: none;
-    padding: 0 20px 60px 20px;
+    list-style-type: none;
+    padding: 0 24px 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 17px;
 }
 .card {
     border-radius: 30px;
-    padding: 24px 20px 20px 20px;
+    padding: 15px 9px 20px 22px;
 }
-.cards-list-items:not(:last-child) {
+.cards-list-items 
+{
     padding-bottom: 32px;
 }
 .card-theme-black {
@@ -142,7 +167,6 @@ a {
     background-color: #FEE42A;
     color: #131313;
 }
-
 .card-title {
     font-family: 'EB Garamond', 'serif';
     font-size: 22px;
@@ -163,12 +187,10 @@ a {
     font-size: 16px;
     font-weight: 700;
 }
-
 .footer-links {
     list-style: none;
     display: flex;
 }
-
 .footer {
     display: flex;
     justify-content: space-between;
